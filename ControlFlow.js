@@ -3,7 +3,6 @@ const parser    = require("@babel/parser");
 const traverse  = require("@babel/traverse").default;
 const types     = require("@babel/types");
 const generator = require("@babel/generator").default;
-const path = require('path');
 
 //将源代码解析为AST
 process.argv.length > 2?encodeFile = process.argv[2]:encodeFile = "./encode.js";
